@@ -1,4 +1,4 @@
-const counterVogal = (string) => {
+const counterVowel = (string) => {
     
     if(string === undefined || typeof string !== 'string') {
         throw new Error('You should pass a string as argument')
@@ -11,4 +11,4 @@ const counterVogal = (string) => {
 }
 
 
-module.exports = counterVogal
+module.exports = counterVowel

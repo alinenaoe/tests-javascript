@@ -1,27 +1,27 @@
-const counterVogal = require('./counterVogal');
+const counterVowel = require('./counterVowel');
 
 describe('Should count number of vowels of a given string', () => {
 
     test('Should be a function', () => {
-        expect(counterVogal).toBeInstanceOf(Function);
+        expect(counterVowel).toBeInstanceOf(Function);
     })
 
     test('Should return an error if parameter is not a string', () => {
         expect( () => {
-            counterVogal(32)
+            counterVowel(32)
         }).toThrow(Error)
     })
 
     test('Should count vowels of strings with one or more words', () => {
-        expect(counterVogal('Meus primeiros testes com javascript')).toBe(12)
+        expect(counterVowel('Meus primeiros testes com javascript')).toBe(12)
     })
 
     test('Should count vowels a, e, i, o, u', () => {
-        expect(counterVogal('DoWhile')).toBe(3)
+        expect(counterVowel('DoWhile')).toBe(3)
     })
 
     test('Should count uppercase and lowercase vowels', () => {
-        expect(counterVogal('RockEtsEat')).toBe(4)
+        expect(counterVowel('RockEtsEat')).toBe(4)
     })
 
 })
